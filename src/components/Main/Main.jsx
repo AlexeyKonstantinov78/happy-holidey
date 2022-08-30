@@ -1,5 +1,6 @@
 import Container from '../Container/Container';
 import style from './Main.module.css';
+import img from '../../img/card-bg.jpg';
 
 
 const Main = () => (
@@ -8,7 +9,7 @@ const Main = () => (
       <div className={style.card}>
           <div className={style.wrapper}>
             <div className={style.image}>
-              <img className={style.img} src="img/card-bg.jpg" alt="card-bg" />              
+              <img className={style.img} src={img} alt="card-bg" />              
               <p className={style.felicitation}>
                 Поздравляю с днем рожденья!
                 Пусть будет жизнь полна веселья,

@@ -1,6 +1,7 @@
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
-import { Outlet } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 const wrapper = {
   display: 'flex',
@@ -8,12 +9,26 @@ const wrapper = {
   height: '100vh',
 }
 
-const Layout = () => (
-  <div style={wrapper}>      
-    <Header />
-    <Outlet />
-    <Footer />
-  </div>
-);
+const btn = {
+  display: 'block',
+  margin: '20px auto',
+}
+
+const Layout = () => {
+  const {text: {idText}, image: {idImg}} = useSelector(state => state);
+
+  return (
+    <div style={wrapper}>      
+      <Header />
+      <Outlet />
+      {idText && idImg && (
+        <Link style={btn} to={`singleCard/${idText}/${idImg}`} target="_blank">
+        Поделится открыткой
+        </Link>
+      )}
+      <Footer />
+    </div>
+  );
+}
 
 export default Layout;

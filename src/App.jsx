@@ -9,7 +9,8 @@ const App = () => {
       <Route path='/' element={<Layout />}>
         <Route index element={<EmpyCard />}/> 
         <Route path='card/:holiday' element={<Card />}/>          
-      </Route>     
+      </Route>
+      <Route path='singleCard/:idText/:idImg' element={<Card />}/>
     </Routes>            
   );
 }

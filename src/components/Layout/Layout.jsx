@@ -22,7 +22,7 @@ const Layout = () => {
       <Header />
       <Outlet />
       {idText && idImg && (
-        <Link style={btn} to={`singleCard/${idText}/${idImg}`} target="_blank">
+        <Link style={btn} to={`singleCard/${idText}/${idImg}`}>
         Поделится открыткой
         </Link>
       )}

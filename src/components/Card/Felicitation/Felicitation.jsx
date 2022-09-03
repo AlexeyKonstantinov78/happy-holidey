@@ -4,11 +4,11 @@ import style from './Felicitation.module.css';
 const Felicitation = () => {
   const {text, loading} = useSelector(state => state.text);
   
+  console.log(text);
   return (
   <p className={style.felicitation}>
     {loading === 'loading' ? 'Загрузка...' : 
-      text === '' ? 'Выберите повод для поздравления!' : text}
-    {text ?? 'Выбирете повод для поздравления!'}         
+      text === '' ? 'Выберите повод для поздравления!' : text}    
   </p>
 )};
 

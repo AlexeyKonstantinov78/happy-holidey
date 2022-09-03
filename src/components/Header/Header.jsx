@@ -3,6 +3,7 @@ import style from './Header.module.css';
 import Choices from './Choises/Choices';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchText } from '../../store/textSlice';
+import { fetchImg } from '../../store/imgSlice';
 
 
 const Header = () => {
@@ -21,7 +22,12 @@ const Header = () => {
                 dispatch(fetchText(holiday));
               }}
             >Поменять поздравление</button>
-            <button className={style.button}>Поменять фон</button>            
+            <button 
+              className={style.button}
+              onClick={() => {
+                dispatch(fetchImg(holiday));
+              }}
+            >Поменять фон</button>            
           </div>
           <Choices/>
         </div>

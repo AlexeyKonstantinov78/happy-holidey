@@ -16,12 +16,12 @@ const Footer = () => (
         </div>
         <ul className={style.social}>
           <li className={style.item}>
-            <a href="#" className={style.link}>
+            <a href="https://vk.com" className={style.link}>
               <VKIcon />
             </a>
           </li>
           <li className={style.item}>
-            <a href="#" className={style.link}>
+            <a href="https://tel.com" className={style.link}>
               <TGIcon/>
             </a>
           </li>
@@ -31,7 +31,7 @@ const Footer = () => (
             </a>
           </li>
           <li className={style.item}>
-            <a href="#" className={style.link}>
+            <a href="https://pinteres.com" className={style.link}>
               <STIcon/>
             </a>
           </li>

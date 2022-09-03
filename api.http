@@ -1,0 +1,7 @@
+
+GET https://vanilla-legend-factory.glitch.me/api
+
+###
+GET https://vanilla-legend-factory.glitch.me/api/text/{title_holiday}
+###
+GET https://vanilla-legend-factory.glitch.me/api/image/newyear

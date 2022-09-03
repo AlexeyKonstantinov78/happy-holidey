@@ -9,6 +9,37 @@
   color: #fff;
 }
 
+.wrapper{
+  position: relative;
+}
+
+.list {
+  position: absolute;
+  width: 300px;
+  padding: 20px 52px;
+  font-weight: 700px;
+  font-size: 18px;
+  background-color: #00c78b;
+  color: #fff;
+  top: 68px;
+  border-radius: 30px;
+  border: none;
+}
+
+.item {
+  cursor: pointer;
+  line-height: 36px;
+  margin-bottom: 10px;
+}
+
+.item:last-child {
+  margin-bottom: 0;
+}
+
+.linkActive {
+  color: #9a6600;
+}
+
 @media (max-width: 1024px) {
   .button {
     width: 220px;

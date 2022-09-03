@@ -1,14 +1,15 @@
 import Container from '../Container/Container';
 import style from './Header.module.css';
 import Choices from './Choises/Choices';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { fetchText } from '../../store/textSlice';
 import { fetchImg } from '../../store/imgSlice';
+import { useParams } from 'react-router-dom';
 
 
 const Header = () => {
-  const dispatch = useDispatch();
-  const { holiday } = useSelector(state => state.holidays);
+  const dispatch = useDispatch();  
+  const { holiday } = useParams();
 
   return (
     <header className={style.header}>

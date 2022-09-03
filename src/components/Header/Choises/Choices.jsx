@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchHolidays, setHoliday } from '../../../store/holidaysSlice';
 import { fetchText } from '../../../store/textSlice';
+import { fetchImg } from '../../../store/imgSlice';
 
 const Choices = () => {
   const [isOpenChoises, setIsOpenChoises] = useState(false);   
@@ -32,6 +33,7 @@ const Choices = () => {
             onClick={() => {
               dispatch(setHoliday(item[0]));
               dispatch(fetchText(item[0]));
+              dispatch(fetchImg(item[0]));
               toggleChoises();
             }}
           >{item[1]}

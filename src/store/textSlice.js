@@ -11,7 +11,7 @@ export const fetchText = createAsyncThunk(
 );
 
 const testSlice = createSlice({
-  name: 'test',
+  name: 'text',
   initialState: {
     text: '',
     idText:'',
